@@ -1,3 +1,8 @@
+#Básicamente utilizamos un método abstracto llamado factory_method, que posteriormente será implementado por subclases para crear distintos tipos de objetos que en este caso son los productos, las subclases lo podemos ver como notificaciones por email, sms o push. 
+#Utilizar este método es útil para la extensibilidad, usarlo para otro producto que en este caso se podría usar en notificaciones WhatsApp, creando una nueva clase sin modificar el código existente. 
+#También es útil en reutilización de código, contiene la lógica reutilizable para que funcione en cualquier tipo de producto, mientras que las subclases se encargan de la creación especifica de algún producto. 
+
+
 from abc import ABC, abstractmethod
 from typing import Type
 
